@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Privacy Policy — Imposter+</title>
-<meta name="description" content="Imposter+ Privacy Policy: how we protect your privacy, on-device data handling, purchases, and voluntary error reporting.">
+<meta name="description" content="Imposter+ Privacy Policy: how we protect your privacy, on-device data handling, optional TikTok media integration, purchases, and voluntary error reporting.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -180,18 +180,18 @@
 
     <div class="wordmark">Imposter<span class="wordmark-plus">+</span></div>
     <h1>Privacy Policy</h1>
-    <p class="updated">Last updated: September 2, 2026</p>
+    <p class="updated">Last updated: September 29, 2026</p>
 
     <div class="highlight-card">
       <div class="highlight-card-title">Privacy Summary</div>
-      <p>Imposter+ is built with a privacy-first design: no accounts, no remote server tracking, no advertising SDKs, and local on-device gameplay. Diagnostic error reporting is 100% voluntary, giving you complete visibility and control over any data you choose to send.</p>
+      <p>Imposter+ is built with a privacy-first design: no accounts, no remote server tracking, no advertising SDKs, and local on-device gameplay. Optional TikTok media integration for Media Games operates strictly on-device with zero login credential collection, and diagnostic error reporting is 100% voluntary, giving you complete visibility and control over your data.</p>
     </div>
 
     <div class="policy">
       <p class="intro">Imposter+ is an independent mobile application developed by Kamal Neupane ("we," "our," or "us"). This Privacy Policy explains how information is handled when you use our mobile application ("App") on iOS and iPadOS. We believe your party games and private gatherings should remain private.</p>
 
       <h2>1. Privacy by Design Architecture</h2>
-      <p>Imposter+ operates almost entirely on your physical device. We do not maintain user accounts, do not require registration or passwords, do not run remote player databases, and do not track your activity across other applications or websites.</p>
+      <p>Imposter+ operates almost entirely on your physical device. We do not maintain remote user accounts, do not require registration or passwords on our servers, do not run remote player databases, and do not track your activity across other applications or websites. When you choose to play Media Games featuring social video content (such as <em>Who Liked?</em> or <em>Imposter Courtroom</em>), all synchronization, decoy generation, and video interactions are executed and stored directly on your physical device.</p>
 
       <h2>2. Information We Process & Collect</h2>
       <p>The App clearly distinguishes between information stored locally on your device (which is not automatically transmitted to us) and information you voluntarily choose to transmit to us via email:</p>
@@ -202,10 +202,21 @@
       <h3>B. Motion & Sensor Data (Processed in Memory)</h3>
       <p>When playing Forehead Frenzy, the App accesses real-time accelerometer and device tilt data solely to detect nod-down (correct) and tilt-up (pass) gameplay gestures. <strong>Motion data is processed strictly in temporary volatile memory during active rounds and is never recorded, stored, or transmitted off your device.</strong></p>
 
-      <h3>C. In-App Purchases & Subscriptions (Handled by Apple)</h3>
+      <h3>C. Optional Media Games & TikTok Integration Data (On-Device Processing)</h3>
+      <p>If you choose to use the optional Media Games features (such as <em>Who Liked?</em> or <em>Imposter Courtroom</em>) and sync your TikTok account, the App accesses the following data:</p>
+      <ul>
+        <li><strong>Account & Profile Display Information:</strong> Username, profile display name, and unique account identifier. <em>Purpose:</em> In-game profile identification and score display. <em>Legal Basis:</em> Performance of a contract / user consent.</li>
+        <li><strong>Authorized Video Interaction Content:</strong> Public and interaction video records, including video identifiers, CDN preview links, and captions/descriptions from videos you have liked, favorited, or reposted, as well as general recommendation items utilized as in-game courtroom decoys. <em>Purpose:</em> Core game mechanics, such as allowing you and your friends in a local room to guess, inspect, or vote on which liked or saved videos belong to which player. <em>Legal Basis:</em> Performance of a contract.</li>
+      </ul>
+      <p><strong>Credential Privacy & Authorization:</strong> We only access data you explicitly authorize, and <strong>we do not collect, view, or store your TikTok login credentials or passwords</strong>. Authentication takes place directly through TikTok's official web domain via a secure in-app browser session, and the App never receives or stores your password.</p>
+      <p><strong>Strictly Local On-Device Storage (No Remote Game Servers):</strong> Imposter+ operates without external game servers. All retrieved video items, preview links, and identifiers are stored solely within your device's private local application sandbox (such as <code>localStorage</code>, <code>IndexedDB</code>, and local media caches). <strong>Your personal video libraries are never uploaded, transmitted, or saved to any remote servers operated by us.</strong></p>
+      <p><strong>Audio & Playback Privacy:</strong> All background media audio is suppressed and muted during synchronization, and video clips are rendered locally on your device solely for active round gameplay.</p>
+      <p><strong>User Control & Revocation:</strong> Connecting your TikTok account is entirely voluntary. You can disconnect your account, clear active session cookies, or wipe your locally stored video library at any time directly within the App via App Settings ("Disconnect TikTok Account" or "Delete All Data").</p>
+
+      <h3>D. In-App Purchases & Subscriptions (Handled by Apple)</h3>
       <p>If you choose to purchase an Imposter+ Premium subscription or lifetime unlock, the transaction is billed and processed directly by Apple Inc. through the App Store using StoreKit APIs. <strong>We do not collect, receive, or store your payment details, credit card numbers, or billing addresses.</strong> Apple validates transactions and provides the App with cryptographic receipt and transaction status information locally on your device to unlock Premium features. All purchase data is handled by Apple under <a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener">Apple's Privacy Policy</a>.</p>
 
-      <h3>D. Voluntary Diagnostic Error Reporting (Sent via Email)</h3>
+      <h3>E. Voluntary Diagnostic Error Reporting (Sent via Email)</h3>
       <p>The App includes an optional, user-controlled Error Reporting feature to help us investigate, reproduce, and resolve unexpected errors, crashes, or software defects. When you choose to compile an error report, the App generates a diagnostic summary that may include:</p>
       <ul>
         <li><strong>Error Details:</strong> Error code (e.g., <code>GAME_LOAD_042</code>), error message, error category/type, occurrence count in the current session, and timestamp.</li>
@@ -219,12 +230,14 @@
       <p><strong>Email Transmission & Receipt of Email Address:</strong> Error reports are generated within the App and handed off to your device's native mail composer (such as Apple Mail or your chosen email app). The report is sent as an email through your own email provider to our support address (<code>imposter-plus@outlook.com</code>). <strong>Consequently, we necessarily receive your sender email address along with the diagnostic report and any text or attachments you include in the message.</strong></p>
       <p><strong>Strict Purpose Limitation:</strong> We use your email address and diagnostic report solely to investigate, troubleshoot, reproduce, and fix the reported technical issue, and to reply to you with assistance or resolution details if necessary. <strong>We do not sell, rent, or intentionally disclose your email address to third parties for advertising, marketing, or profiling.</strong></p>
 
-      <h3>E. Direct Support & Feedback Communications</h3>
+      <h3>F. Direct Support & Feedback Communications</h3>
       <p>If you contact us directly by email for customer support, bug reporting, or general feedback, we receive your email address and message contents to respond to your inquiry and support the App.</p>
 
       <h2>3. Information We Do NOT Collect</h2>
       <p>To ensure absolute clarity regarding your privacy, Imposter+ does <strong>not</strong>:</p>
       <ul>
+        <li>Collect or store your TikTok account passwords or login credentials;</li>
+        <li>Upload your personal TikTok videos, liked videos, or interaction history to external developer servers;</li>
         <li>Collect precise or approximate GPS location data;</li>
         <li>Access your personal contacts, address book, microphone, or photo library;</li>
         <li>Include third-party advertising SDKs, ad trackers, or analytics tracking frameworks;</li>
@@ -235,8 +248,9 @@
       <h2>4. Legal Bases for Processing (Under GDPR & International Laws)</h2>
       <p>For users in jurisdictions requiring a lawful basis for data processing (such as the European Economic Area under the GDPR and the United Kingdom under the UK GDPR), we process personal data under the following legal bases:</p>
       <ul>
+        <li><strong>Performance of a Contract (GDPR Art. 6(1)(b)):</strong> To deliver the core gameplay experience, validate in-app purchase entitlements, and execute user-requested Media Games features and authorized TikTok interaction mechanics.</li>
         <li><strong>Legitimate Interests (GDPR Art. 6(1)(f)):</strong> To investigate user-initiated error reports, diagnose technical defects, maintain application security and stability, and respond to support inquiries.</li>
-        <li><strong>Performance of a Contract (GDPR Art. 6(1)(b)):</strong> To deliver the core gameplay experience and validate in-app purchase entitlements.</li>
+        <li><strong>Consent (GDPR Art. 6(1)(a)):</strong> Where you explicitly choose to connect an optional third-party service (such as TikTok) for personalized media gameplay, which can be disconnected or revoked at any time.</li>
         <li><strong>Legal Obligations (GDPR Art. 6(1)(c)):</strong> Where processing or retaining records is required to comply with applicable legal or regulatory requirements.</li>
       </ul>
 
@@ -248,15 +262,17 @@
 
       <h2>7. Data Retention & Deletion</h2>
       <ul>
-        <li><strong>On-Device Data:</strong> Game preferences, themes, and custom categories remain on your device until you delete them using the in-app "Delete All Data" button in App Settings or by uninstalling the App.</li>
+        <li><strong>On-Device Preferences & Custom Content:</strong> Game preferences, themes, player avatars, and custom categories remain on your device until you delete them using the in-app "Delete All Data" button in App Settings or by uninstalling the App.</li>
+        <li><strong>Media Games & TikTok Integration Data:</strong> Stored strictly within your local on-device sandbox. This data is retained locally until you disconnect your account in the App ("Disconnect TikTok Account"), tap "Delete All Data" in App Settings, or uninstall the App. Active in-game state (such as round voting, player guesses, and score tallies) is held in temporary volatile memory during an active game session and discarded upon game completion.</li>
         <li><strong>Support & Error Report Emails:</strong> Emails and diagnostic reports sent to our support inbox are generally retained for up to 90 days following the resolution of the reported issue or inquiry, after which we will take reasonable steps to securely delete the information, subject to any applicable legal, security, backup, or service-provider retention requirements. In limited circumstances, communications may be retained longer where reasonably necessary for ongoing technical investigations into recurring defects, dispute resolution, or to satisfy legal or regulatory obligations.</li>
         <li><strong>Purchase Records:</strong> Transaction histories are managed and retained directly by Apple in accordance with Apple's privacy policy.</li>
       </ul>
 
       <h2>8. Third-Party Services</h2>
-      <p>We do not sell, rent, trade, or share your personal data with advertisers, data brokers, or analytics platforms. The only third-party services involved in connection with the App are:</p>
+      <p>We do not sell, rent, trade, or share your personal data with advertisers, data brokers, or analytics platforms. The third-party services involved in connection with the App are:</p>
       <ul>
         <li><strong>Apple Inc.:</strong> Provides App Store distribution, payment and subscription processing via StoreKit, and native iOS system frameworks under <a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener">Apple's Privacy Policy</a>. Apple does not receive ordinary gameplay data from the App.</li>
+        <li><strong>TikTok (ByteDance Ltd.):</strong> When you voluntarily choose to use optional Media Games features, your device connects directly to TikTok services (ByteDance Ltd., United States / Singapore) to authenticate and retrieve authorized interaction clips under TikTok's Terms of Service and Privacy Policy. We do not collect or receive your passwords, and no user data is shared with TikTok for advertising by Imposter+.</li>
         <li><strong>Microsoft:</strong> Email service provider used to receive and reply to user-initiated support requests and error reports sent to <code>imposter-plus@outlook.com</code> in accordance with Microsoft's email infrastructure and security practices. Microsoft does not receive ordinary gameplay data from the App.</li>
       </ul>
 
@@ -266,7 +282,7 @@
         <li><strong>Access & Portability:</strong> The right to request a copy of any personal communications or data we hold about you.</li>
         <li><strong>Rectification & Erasure:</strong> The right to request that we correct inaccurate data or delete your support emails, subject to applicable retention requirements. You can also erase all on-device data instantly within the App.</li>
         <li><strong>Restriction & Objection:</strong> The right to object to or request the restriction of our processing of your personal information.</li>
-        <li><strong>Withdrawal of Consent:</strong> Where any processing is based on your consent, the right to withdraw that consent at any time (without affecting the lawfulness of processing before withdrawal).</li>
+        <li><strong>Withdrawal of Consent & Revocation:</strong> Where any processing is based on your consent or voluntary connection of third-party features (such as TikTok), you maintain the right to withdraw consent or disconnect the integration at any time through App Settings or by clearing your session.</li>
         <li><strong>Non-Discrimination:</strong> We will never discriminate against you for exercising your privacy rights.</li>
       </ul>
       <p>These rights apply where applicable under regional privacy frameworks, including the <strong>GDPR & UK GDPR</strong> (EEA and United Kingdom), the <strong>California Consumer Privacy Act / CCPA / CPRA</strong> (California), the <strong>Australian Privacy Act 1988 (Cth)</strong>, Canada's <strong>PIPEDA</strong>, and Brazil's <strong>LGPD</strong>. We do not sell or share personal information for cross-context behavioral advertising. To exercise any of these rights, contact us at the email address below.</p>
@@ -289,7 +305,8 @@
       <p>If you have any questions or requests regarding this Privacy Policy, please contact:</p>
 
       <div class="contact-box">
-        <p><strong>Imposter+ Support & Privacy</strong><br>
+        <p><strong>Kamal Neupane</strong><br>
+        Imposter+ Support & Privacy<br>
         Email: <a href="mailto:imposter-plus@outlook.com">imposter-plus@outlook.com</a><br>
         Web: <a href="https://imposter-plus.github.io/">https://imposter-plus.github.io/</a></p>
       </div>
@@ -297,7 +314,8 @@
 
     <footer>
       Imposter+ is an independently developed party game application.<br>
-      Apple, iPhone, iPad, and App Store are trademarks of Apple Inc., registered in the U.S. and other countries.
+      TikTok is a trademark of ByteDance Ltd. Apple, iPhone, iPad, and App Store are trademarks of Apple Inc., registered in the U.S. and other countries.<br>
+      Imposter+ is not affiliated with, sponsored by, or endorsed by ByteDance Ltd., TikTok, or Apple Inc.
     </footer>
   </div>
 </body>
